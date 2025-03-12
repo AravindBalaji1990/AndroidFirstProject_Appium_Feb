@@ -15,6 +15,7 @@ public class AndroidRunDemo {
         obj_andorid.setPlatformName("Android");
         obj_andorid.setAutomationName(AutomationName.ANDROID_UIAUTOMATOR2);
         obj_andorid.setUdid("29221JEGR00379");
+        obj_andorid.setIgnoreHiddenApiPolicyError(true);
         obj_andorid.setApp(System.getProperty("user.dir")+"\\src\\test\\resources\\sampleapp\\Android.SauceLabs.Mobile.Sample.app.2.7.1.apk");
 
         AndroidDriver driver = new AndroidDriver(new URL("http://127.0.0.1:4723/"),obj_andorid);
