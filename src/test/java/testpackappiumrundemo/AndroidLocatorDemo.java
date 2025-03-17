@@ -4,6 +4,7 @@ import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
 import io.appium.java_client.remote.AutomationName;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 import java.net.MalformedURLException;
@@ -31,7 +32,8 @@ public class AndroidLocatorDemo {
 //        locator using resource id = id
         // whenever ther eis duplciate it will pick the first occurence of the lement with the locator and perform the action
         // if there is nothing avialable - exception
-//        driver.findElement(AppiumBy.id("android:id/text1")).click();
+        driver.findElement(AppiumBy.id("android:id/text1")).click();
+
 
 
         // to identify all thelement or duplicates
